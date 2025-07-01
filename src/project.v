@@ -21,9 +21,9 @@ module tt_um_example (
 
     always @(posedge clk or posedge reset) begin
         if (reset) begin
-            uio_out <= 0;
+            uo_out <= 0;
         end else begin
-            uio_out <= ui_in[7:4] + ui_in[3:0];
+            uo_out <= ui_in[7:4] + ui_in[3:0];
         end
     end
 
